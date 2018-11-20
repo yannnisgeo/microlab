@@ -1,0 +1,34 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega16"</DEVICE>
+ <WORKING_DIR>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.2\ex5.2\ex5.2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.150\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.2\ex5.2\ex5.2\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.150\avrasm\inc\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.2\ex5.2\ex5.2\Debug\ex5.2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>ex5.2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>ex5.2.map</FILE>
+  <FILE>ex5.2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <reset><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.2\ex5.2\ex5.2\main.asm</FILE><LINE>18</LINE></reset>
+  <ISR0><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.2\ex5.2\ex5.2\main.asm</FILE><LINE>52</LINE></ISR0>
+  <loop><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.2\ex5.2\ex5.2\main.asm</FILE><LINE>42</LINE></loop>
+  <wait_msec><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.2\ex5.2\ex5.2\main.asm</FILE><LINE>96</LINE></wait_msec>
+  <check><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.2\ex5.2\ex5.2\main.asm</FILE><LINE>62</LINE></check>
+  <stillcnt><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.2\ex5.2\ex5.2\main.asm</FILE><LINE>75</LINE></stillcnt>
+  <nextdig><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.2\ex5.2\ex5.2\main.asm</FILE><LINE>80</LINE></nextdig>
+  <wait_usec><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.2\ex5.2\ex5.2\main.asm</FILE><LINE>109</LINE></wait_usec>
+ </LABELS>
+</ASSEMBLER_INFO>

@@ -1,0 +1,56 @@
+	IN 10H
+
+RD:
+	CALL KIND	; Reading x.
+	RAL		; Multiplying it by 16, by 4 left bitwise shifts.
+	RAL
+	RAL
+	RAL
+	MOV B,A	; Storing x in register B.
+	CALL KIND	; Reading y.
+	ADD B		; (A) = 16*x + y
+	
+	LXI H,0905H	; We store the display data at address 0900H.
+	MVI D,00H	; Initialize hundreds.
+
+HUND:
+	CPI 64H	; If (A)<100 then we move on to decades.
+	JC SHUND
+	INR D		; Else we increase hundreds by one,
+	SUI 64H	; subtract 100 from (A)
+	JMP HUND	; and repeat.
+	
+SHUND:
+	MOV M,D	; Store hundreds.
+	MVI D,00H	; Initialize decades.
+	DCX H
+
+DEC:
+	CPI 0AH	; If (A)<10 then we move on to decades.
+	JC UNIT	
+	INR D		; Else we increase hundreds by one,
+	SUI 0AH	; subtract 10 from (A)
+	JMP DEC	; and repeat.
+
+UNIT:
+	MOV M,D	; Store decades.
+	DCX H
+	MOV M,A	; Store the remaining single digits.
+	DCX H
+
+	MVI M,10H	; Fill the rest with blank characters.
+	DCX H
+	MVI M,10H
+	DCX H
+	MVI M,10H
+	DCX H
+	MVI D,00H
+
+	LXI D,0900H	; Store the data address in DE before calling STDM.
+
+	CALL STDM	; Print the result. :)
+	CALL DCD
+	
+	JMP RD
+
+END

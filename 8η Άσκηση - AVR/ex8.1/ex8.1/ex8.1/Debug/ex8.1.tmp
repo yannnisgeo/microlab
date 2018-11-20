@@ -1,0 +1,42 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega16"</DEVICE>
+ <WORKING_DIR>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.150\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.150\avrasm\inc\m16def.inc</FILE>
+  <FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\wait.asm</FILE>
+  <FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\one_wire.asm</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\Debug\ex8.1.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>ex8.1.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>ex8.1.map</FILE>
+  <FILE>ex8.1.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <wait_msec><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\wait.asm</FILE><LINE>3</LINE></wait_msec>
+  <wait_usec><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\wait.asm</FILE><LINE>16</LINE></wait_usec>
+  <one_wire_receive_byte><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\one_wire.asm</FILE><LINE>18</LINE></one_wire_receive_byte>
+  <loop_><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\one_wire.asm</FILE><LINE>21</LINE></loop_>
+  <one_wire_receive_bit><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\one_wire.asm</FILE><LINE>39</LINE></one_wire_receive_bit>
+  <one_wire_transmit_byte><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\one_wire.asm</FILE><LINE>68</LINE></one_wire_transmit_byte>
+  <_one_more_><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\one_wire.asm</FILE><LINE>71</LINE></_one_more_>
+  <one_wire_transmit_bit><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\one_wire.asm</FILE><LINE>91</LINE></one_wire_transmit_bit>
+  <one_wire_reset><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\one_wire.asm</FILE><LINE>122</LINE></one_wire_reset>
+  <start><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\main.asm</FILE><LINE>19</LINE></start>
+  <read_temp><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\main.asm</FILE><LINE>29</LINE></read_temp>
+  <no_device><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\main.asm</FILE><LINE>72</LINE></no_device>
+  <check_finished><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\main.asm</FILE><LINE>39</LINE></check_finished>
+  <done><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\8η ’σκηση - 5η AVR\ex8.1\ex8.1\ex8.1\main.asm</FILE><LINE>66</LINE></done>
+ </LABELS>
+</ASSEMBLER_INFO>

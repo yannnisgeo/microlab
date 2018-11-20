@@ -1,0 +1,83 @@
+	IN 10H
+
+	MVI A,0DH	; Activate the RST6.5 interrupt.
+	SIM
+	EI
+
+	MVI A,01H	; The wagon starts from the LSB position.
+	MVI D,00H	; Initialize direction flag. (0 left, 1 right)
+	LXI B,01F4H	; Adjust DELB delay to 0.5 seconds.
+
+	JMP PRINT
+
+START:			; Check for switch LSB status.
+	MOV E,A
+	LDA 2000H
+	RRC
+	MOV A,E
+	JNC START	; If it's not set, wait for it.
+	
+CHECK:
+	MOV E,A	; Check the moving direction...
+	MOV A,D
+	CPI 00H
+	MOV A,E
+	JNZ GORIGHT	; and branch accordingly.
+
+GOLEFT:
+	CPI 80H	; When you reach the leftmost position,
+	JZ CHANGE	; it's time to change direction.
+	RLC		; Else just keep going.
+	JMP PRINT
+
+GORIGHT:
+	CPI 01H
+	JZ CHANGE
+	RRC
+	JMP PRINT
+
+CHANGE:
+	CALL CHG	; Call the routine that changes direction.
+	JMP START
+
+PRINT:			; Print the current state
+	DI
+	CMA
+	STA 3000H
+	CMA
+	DI
+	CALL DELB	; TODO Interrupts & DELB
+	EI
+	JMP START
+
+INTR_ROUTINE:		; RST6.5 interrupt handler.
+	PUSH PSW	; Push some data down the stack.
+	PUSH B
+	LXI B,0032H	; Shorten DELB delay to 50msec, to account for 
+	CALL DELB	; RST6.5 signal delay.
+	LDA 2000H	; Check for LSB status.
+	RRC
+	JNC FIN	; If it's not set ignore the interrupt.
+
+	CALL CHG	; Change direction.
+
+FIN:	RIM		; Check RST6.5 flag to avoid double-counting the
+	ANI 20H	; interrupt.
+	JNZ FIN
+	CALL DELB	; Wait for it,
+	POP B		; restore stacked data,
+	POP PSW
+	EI		; enable interrupts again...
+	RET		; and finally return
+
+CHG:	PUSH PSW	; Change directions.
+	MOV A,D	
+	XRI 01H	; (A) XOR 1 => NOT (A)
+	MOV D,A
+	POP PSW
+	RET
+
+END
+
+
+	

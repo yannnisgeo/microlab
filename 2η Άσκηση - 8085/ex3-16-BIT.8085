@@ -1,0 +1,116 @@
+	IN 10H
+	LXI D,0000H	; Initialize the mod(256) accumulator.
+
+	CALL PRINT
+
+RD:	
+	LXI B,0000H	;
+	LXI H,0905H	; We store the display data at address 0900H.
+	CALL KIND	; Reading x.
+	CPI 83H	; Check if STORE/INCR was pressed.
+	JNZ CONT1
+	CALL ACCUMULATE
+	JMP RD
+
+CONT1:	
+	CPI 81H	; Check if DECR was pressed.
+	JNZ CONT2
+	CALL CLEAR
+
+CONT2:	
+	MOV B,A	; Store the first number in B.
+	MOV M,A	; Store for display
+	DCX H
+	CALL KIND	; Reading y.
+	MOV C,A	; Store the second number in C.
+	MOV M,A	; Store for display
+	
+	CALL PRINT	; Print them in the leftmost 7-segment digits.
+
+	CALL KIND
+	CPI 0AH	; Check if A was pressed.
+	CZ ADD		; If so, add the numbers.
+	JMP RD
+	CPI 0FH	; 
+	CZ MUL		; If so multiply.
+
+	CALL PRINT
+	
+	JMP RD
+
+PRINT:
+	PUSH D
+	LXI D,0900H
+	CALL STDM
+	CALL DCD
+	POP D
+	RET
+
+ADD:	
+	LXI H,0900H
+	PUSH PSW
+	MOV A,B
+	ADD C
+	MOV C,A
+	MOV M,A
+	INX H
+	MVI A,00H	; (A) = 0
+	RAL		; Rotate with carry, so that (A) = (A) + (carry)
+	MOV B,A	
+	MOV M,A	; Store it as the second digit
+	POP PSW
+	CALL PRINT
+	RET
+
+MUL:
+	LXI H,0900H
+	PUSH PSW
+	PUSH D
+	LXI D,0000H
+
+LOPO:
+	MOV A,B
+	CPI 00H
+	JZ DONE
+	DCR B
+	MOV A,E
+	ADD C
+	JNC LOPO
+	INR D
+	JMP LOPO
+
+DONE:
+	MOV M,E
+	INX H
+	MOV M,D
+	MOV C,E
+	MOV B,D
+	POP D
+	POP PSW
+	CALL PRINT
+	RET
+
+CLEAR:
+	LXI D,0000H
+	RET
+
+ACCUMULATE:
+	LXI H,0902H
+	PUSH PSW
+	MOV A,C
+	ADD E
+	MOV M,A
+	MOV E,A	
+	INX H
+	MVI A,00H
+	RAL
+	ADD D
+	ADD B
+	MOV M,A
+	MOV D,A
+	
+	CALL PRINT
+
+	POP PSW
+	RET	
+END

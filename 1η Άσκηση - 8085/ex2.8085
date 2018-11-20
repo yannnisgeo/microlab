@@ -1,0 +1,74 @@
+	IN 10H	
+
+	MVI A,0DH	; Activate the RST6.5 interrupt.
+	SIM
+	EI
+
+	MVI E,00H	; Initialize plain counter.
+	MVI D,00H	; Initialize interrupt counter.
+	LXI B,0064H	; Set DELB delay to 0,1sec.
+
+LOPO:
+	INR E		; Increase plain counter...
+	MOV A,E
+	ANI 0FH	; and trim it to 4 digits.
+	RLC
+	RLC
+	RLC
+	RLC		; Move it over to the 4 MSBs.
+	CMA
+	STA 3000H	; Print it.
+	DI
+	CALL DELB	; Wait,
+	LDA 2000H	; then check if the switch LSB is set.
+	RRC
+	JNC LOPO	; If it's not, keep interrupts disabled and continue.
+	EI
+	JMP LOPO		
+
+INTR_ROUTINE:
+	PUSH PSW	; Push some data down the stack.
+	PUSH B
+	LXI B,0032H	; Shorten DELB delay to 50msec, to account for 
+	CALL DELB	; RST6.5 signal delay.
+	INR D		; Increment the number of interrupts by one...
+	MOV A,D
+	ANI 0FH	; and store as modulo 16.
+	MOV D,A
+	CALL PRINT	; Print it to the 7-segment display.
+FIN:	RIM		; Check RST6.5 flag to avoid double-counting the
+	ANI 20H	; interrupt.
+	JNZ FIN
+	CALL DELB	; Wait for it,
+	EI		; enable interrupts again,
+	POP B		; restore stacked data...
+	POP PSW
+	RET		; and finally return	
+
+PRINT:			; Print the number of interrupts modulo 16
+	PUSH H		; as a single HEX digit.
+
+	LXI H,0900H	; We store data in address 0900H.
+	MOV M,D	; Store the iterrupt count as the first digit
+	INX H		; and fill the rest with blanks.
+	MVI M,10H
+	INX H	
+	MVI M,10H
+	INX H	
+	MVI M,10H
+	INX H	
+	MVI M,10H
+	INX H	
+	MVI M,10H
+
+	PUSH D		
+	LXI D,0900H	; Load the data address for STDM in register D.
+
+	CALL STDM	; Print the counter.
+	CALL DCD
+
+	POP D		; Restore data and return.
+	POP H
+	RET
+
+END

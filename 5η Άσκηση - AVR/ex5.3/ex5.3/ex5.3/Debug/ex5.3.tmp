@@ -1,0 +1,37 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega16"</DEVICE>
+ <WORKING_DIR>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.3\ex5.3\ex5.3\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.150\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.3\ex5.3\ex5.3\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.150\avrasm\inc\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.3\ex5.3\ex5.3\Debug\ex5.3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>ex5.3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>ex5.3.map</FILE>
+  <FILE>ex5.3.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <reset><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.3\ex5.3\ex5.3\main.asm</FILE><LINE>34</LINE></reset>
+  <ISR1><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.3\ex5.3\ex5.3\main.asm</FILE><LINE>116</LINE></ISR1>
+  <ISR_TIMER1_OVF><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.3\ex5.3\ex5.3\main.asm</FILE><LINE>144</LINE></ISR_TIMER1_OVF>
+  <start><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.3\ex5.3\ex5.3\main.asm</FILE><LINE>68</LINE></start>
+  <flashtime><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.3\ex5.3\ex5.3\main.asm</FILE><LINE>93</LINE></flashtime>
+  <check1><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.3\ex5.3\ex5.3\main.asm</FILE><LINE>77</LINE></check1>
+  <wait_msec><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.3\ex5.3\ex5.3\main.asm</FILE><LINE>177</LINE></wait_msec>
+  <check2><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.3\ex5.3\ex5.3\main.asm</FILE><LINE>124</LINE></check2>
+  <closeall><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.3\ex5.3\ex5.3\main.asm</FILE><LINE>165</LINE></closeall>
+  <timoffret><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.3\ex5.3\ex5.3\main.asm</FILE><LINE>170</LINE></timoffret>
+  <wait_usec><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\5η ’σκηση - 2η AVR\ex5.3\ex5.3\ex5.3\main.asm</FILE><LINE>190</LINE></wait_usec>
+ </LABELS>
+</ASSEMBLER_INFO>

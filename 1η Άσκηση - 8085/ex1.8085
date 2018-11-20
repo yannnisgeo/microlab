@@ -1,0 +1,58 @@
+	MVI E,00H	; Initialize timer.
+	MVI B,00H	; Initialize counting flag (0 up, 1 down)
+
+START: 		; Checking the LSB.
+	LDA 2000H
+	RRC
+	JNC START
+	
+MAX:			; Reading the Max time (and resolving a special case).
+	RRC
+	RRC
+	RRC
+	ANI 0FH
+	MOV D,A	; Special check for when timer = max = 0.
+	JNZ CONT
+	CMP E
+	JZ PRINT
+
+CONT:	
+	CMP E		; Checking for a special case where the MSB is
+	JC FIX		; less than the current time. (clock >= max)
+	JZ FIX
+	JMP CHECK
+
+FIX:	MVI B,01H
+	
+CHECK:			; Branch based on counting direction.
+	MOV A,B
+	CPI 01H
+	MOV A,D
+	JZ DOWN
+
+UP:			; Count seconds up.
+	INR E
+	CMP E
+	JNZ PRINT
+	MVI B,01H
+	JMP PRINT
+
+DOWN:			; Count seconds down.
+	DCR E
+	MOV A,E
+	CPI 00H
+	JNZ PRINT
+	MVI B,00H
+
+PRINT:			; Print the results.
+	MOV A,E
+	CMA
+	STA 3000H
+	PUSH B
+	LXI B,03E8H
+	CALL DELB
+	POP B
+	JMP START
+
+HALT:
+	END

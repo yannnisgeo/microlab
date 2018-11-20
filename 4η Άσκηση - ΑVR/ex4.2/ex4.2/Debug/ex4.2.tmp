@@ -1,0 +1,32 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega16"</DEVICE>
+ <WORKING_DIR>C:\Users\Γιάννης\Desktop\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\4η ’σκηση - 1η ΑVR\ex4.2\ex4.2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.150\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Γιάννης\Desktop\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\4η ’σκηση - 1η ΑVR\ex4.2\ex4.2\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.150\avrasm\inc\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Γιάννης\Desktop\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\4η ’σκηση - 1η ΑVR\ex4.2\ex4.2\Debug\ex4.2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>ex4.2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>ex4.2.map</FILE>
+  <FILE>ex4.2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <flash><FILE>C:\Users\Γιάννης\Desktop\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\4η ’σκηση - 1η ΑVR\ex4.2\ex4.2\main.asm</FILE><LINE>19</LINE></flash>
+  <on><FILE>C:\Users\Γιάννης\Desktop\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\4η ’σκηση - 1η ΑVR\ex4.2\ex4.2\main.asm</FILE><LINE>42</LINE></on>
+  <delay><FILE>C:\Users\Γιάννης\Desktop\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\4η ’σκηση - 1η ΑVR\ex4.2\ex4.2\main.asm</FILE><LINE>32</LINE></delay>
+  <off><FILE>C:\Users\Γιάννης\Desktop\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\4η ’σκηση - 1η ΑVR\ex4.2\ex4.2\main.asm</FILE><LINE>47</LINE></off>
+  <wait_msec><FILE>C:\Users\Γιάννης\Desktop\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\4η ’σκηση - 1η ΑVR\ex4.2\ex4.2\main.asm</FILE><LINE>52</LINE></wait_msec>
+  <wait_usec><FILE>C:\Users\Γιάννης\Desktop\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\4η ’σκηση - 1η ΑVR\ex4.2\ex4.2\main.asm</FILE><LINE>65</LINE></wait_usec>
+ </LABELS>
+</ASSEMBLER_INFO>

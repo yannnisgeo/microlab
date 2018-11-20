@@ -1,0 +1,40 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega16"</DEVICE>
+ <WORKING_DIR>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\7η ’σκηση - 4η ΑVR\ex7.2\ex7.2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.150\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\7η ’σκηση - 4η ΑVR\ex7.2\ex7.2\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.150\avrasm\inc\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\7η ’σκηση - 4η ΑVR\ex7.2\ex7.2\Debug\ex7.2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>ex7.2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>ex7.2.map</FILE>
+  <FILE>ex7.2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <lcd_init><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\7η ’σκηση - 4η ΑVR\ex7.2\ex7.2\main.asm</FILE><LINE>142</LINE></lcd_init>
+  <start><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\7η ’σκηση - 4η ΑVR\ex7.2\ex7.2\main.asm</FILE><LINE>33</LINE></start>
+  <lcd_command><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\7η ’σκηση - 4η ΑVR\ex7.2\ex7.2\main.asm</FILE><LINE>134</LINE></lcd_command>
+  <wait_usec><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\7η ’σκηση - 4η ΑVR\ex7.2\ex7.2\main.asm</FILE><LINE>198</LINE></wait_usec>
+  <show_loop><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\7η ’σκηση - 4η ΑVR\ex7.2\ex7.2\main.asm</FILE><LINE>49</LINE></show_loop>
+  <not_one><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\7η ’σκηση - 4η ΑVR\ex7.2\ex7.2\main.asm</FILE><LINE>54</LINE></not_one>
+  <lcd_data><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\7η ’σκηση - 4η ΑVR\ex7.2\ex7.2\main.asm</FILE><LINE>126</LINE></lcd_data>
+  <decades><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\7η ’σκηση - 4η ΑVR\ex7.2\ex7.2\main.asm</FILE><LINE>82</LINE></decades>
+  <decades_loop><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\7η ’σκηση - 4η ΑVR\ex7.2\ex7.2\main.asm</FILE><LINE>84</LINE></decades_loop>
+  <decades_pr><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\7η ’σκηση - 4η ΑVR\ex7.2\ex7.2\main.asm</FILE><LINE>90</LINE></decades_pr>
+  <decades_trpr><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\7η ’σκηση - 4η ΑVR\ex7.2\ex7.2\main.asm</FILE><LINE>95</LINE></decades_trpr>
+  <monades><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\7η ’σκηση - 4η ΑVR\ex7.2\ex7.2\main.asm</FILE><LINE>99</LINE></monades>
+  <write_2_nibbles><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\7η ’σκηση - 4η ΑVR\ex7.2\ex7.2\main.asm</FILE><LINE>108</LINE></write_2_nibbles>
+  <wait_msec><FILE>C:\Users\Γιάννης\Desktop\Επιφάνεια\Σχολή\Ροή Υ\Εργαστήριο Μικροϋπολογιστών\7η ’σκηση - 4η ΑVR\ex7.2\ex7.2\main.asm</FILE><LINE>185</LINE></wait_msec>
+ </LABELS>
+</ASSEMBLER_INFO>
